@@ -1,0 +1,39 @@
+import React, { Component } from "react";
+
+const AppContext = React.createContext({ lang: "en" });
+
+export const AppProvider = AppContext.Provider;
+export const AppConsumer = AppContext.Consumer;
+
+class AppContextProvider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      todo: "",
+      todoList: []
+    };
+  }
+
+  //context state updater function
+  updateContextValue = (key, val) => {
+    this.setState({ [key]: val });
+  };
+
+  getTodoList = () => {};
+
+  render() {
+    return (
+      <AppProvider
+        value={{
+          state: this.state,
+          updateContextValue: this.updateContextValue,
+          getTodoList: this.getTodoList
+        }}
+      >
+        {this.props.children}
+      </AppProvider>
+    );
+  }
+}
+
+export default AppContextProvider;
