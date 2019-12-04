@@ -31,6 +31,31 @@ const variables = {
        card info based(id, account number etc)
      }
    }
+  },
+  orderBy: {
+    profile info based sorting(id, title ASC or DESC etc)
+  },
+  skip: Integer to skip the records,
+  after: String,
+  before: String,
+  first: Integer,
+  last: Integer
+}
+*/
+//Response from the below hook will look like below
+/*
+params = {
+  startApi: func,
+  response: {
+    loading: boolean( returns true if completed),
+    error: Object( we can get the message by error.message){
+      message: String
+    },
+    data: Object(response came from graphql server){
+      readProfile: {
+        id, title etc
+      }
+    }
   }
 }
 */

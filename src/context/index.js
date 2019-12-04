@@ -14,9 +14,15 @@ class AppContextProvider extends Component {
     };
   }
 
-  //context state updater function
+  /**
+   * updateContextValue: Update the values in the context
+   * @param {string} key the name of the value to be updated
+   * @param {string} val the actual value that is passed in the key to update
+   * @returns {object} { }
+   **/
   updateContextValue = (key, val) => {
     this.setState({ [key]: val });
+    return {};
   };
 
   getTodoList = () => {};
