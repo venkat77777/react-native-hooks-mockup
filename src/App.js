@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import AppContextProvider, { AppConsumer } from "./context";
-import LoginScreen from "./screens/Login/LoginScreen";
+import AppNavigation from './framework/AppNavigation';
 
 class App extends Component {
   render() {
     return (
-      <AppContextProvider>
-        <AppConsumer>{data => <LoginScreen />}</AppConsumer>
-      </AppContextProvider>
+      <AppNavigation />
     );
   }
 }
