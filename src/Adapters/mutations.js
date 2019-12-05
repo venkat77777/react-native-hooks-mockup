@@ -1,6 +1,13 @@
 import { useMutation } from "@apollo/react-hooks";
 import { login } from "./operations";
 
+/**
+ * useLogin: Update the values in the context
+ * @param {string} variable the name of the value to be updated
+ *
+ * @returns {object} params:{startApi:function,response:object } //description
+ **/
+
 function useLogin(variables) {
   const params = {
     startApi: () => {},
