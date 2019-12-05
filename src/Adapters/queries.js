@@ -61,7 +61,7 @@ import { readProfile, readKYCStatus } from "./operations";
   }
 **/
 
-function useReadProfile(variables) {
+function useReadProfileQuery(variables) {
   const params = {
     startApi: () => {},
     response: {}
@@ -104,7 +104,7 @@ function useReadProfile(variables) {
   }
 
  */
-function useReadKYCStatus() {
+function useReadKYCStatusQuery() {
   const params = {
     startApi: () => {},
     response: {}
@@ -124,4 +124,4 @@ function useReadKYCStatus() {
   return params;
 }
 
-export { useReadProfile, useReadKYCStatus };
+export { useReadProfileQuery, useReadKYCStatusQuery };
