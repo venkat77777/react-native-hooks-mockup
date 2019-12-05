@@ -9,7 +9,8 @@ class LoginScreen extends Component {
         <TextInput style={styles.inputBox} placeholder="Password" />
         <Button
           title="Login"
-          onPress={() => {}} color="black"
+          onPress={() => {}}
+          color="#b58c3c"
           style={styles.loginButton}
         />
       </View>
@@ -25,9 +26,9 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   inputBox: {
-    borderRadius: 40 ,
-    marginTop:10,
-    marginBottom:10,
+    borderRadius: 40,
+    marginTop: 10,
+    marginBottom: 10,
     height: 50,
     width: "80%",
     borderColor: "white",
