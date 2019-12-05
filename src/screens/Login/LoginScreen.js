@@ -9,7 +9,7 @@ class LoginScreen extends Component {
         <TextInput style={styles.inputBox} placeholder="Password" />
         <Button
           title="Login"
-          onPress={() => {}} color="white"
+          onPress={() => {}} color="black"
           style={styles.loginButton}
         />
       </View>
