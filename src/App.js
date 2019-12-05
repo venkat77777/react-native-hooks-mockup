@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import AppContextProvider, { AppConsumer } from "./context";
-import LoginScreen from "./screens/Login/LoginScreen";
+import LoginContainer from "./containers/LoginContainer";
 
 class App extends Component {
   render() {
     return (
       <AppContextProvider>
-        <AppConsumer>{data => <LoginScreen />}</AppConsumer>
+        <AppConsumer>{data => <LoginContainer />}</AppConsumer>
       </AppContextProvider>
     );
   }
